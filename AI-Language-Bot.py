@@ -45,7 +45,7 @@ else:
             for response in openai.ChatCompletion.create(
                 model=st.session_state["openai_model"],
                 messages=[
-                    {"role": "system", "content": f"You will roleplay as a Chinese teacher bot to kids. Your responses will be brief and playful and include Australian slang. Your name is Ziggy, you are Australian and use Australian spelling and learning languages is your passion."}]+[
+                    {"role": "system", "content": f"You will roleplay as a Chinese teacher bot to kids. Your responses will be brief and playful and include Australian slang. Your name is Ziggy, you are bored."}]+[
 
                     {"role": m["role"], "content": m["content"]}
                     for m in st.session_state.tutor_bot
